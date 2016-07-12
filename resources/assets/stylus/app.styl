@@ -1,0 +1,91 @@
+azul1 = #006F9D
+azul2 = #002E50
+verde1 = #00A19C
+gris1 = #F2F2F2
+amarillo1 = #D4D700
+blanco = #FFFFFF
+
+body
+	background blanco
+	font-family 'Lato', sans-serif
+	padding-top 55px
+.navbar-default
+	background-color azul1
+	border-color azul2
+	margin-bottom 0
+	text-transform uppercase
+	.navbar-toggle
+		border none
+		.icon-bar
+			background-color blanco
+			height 4px
+			width 25px
+		&:hover
+			background-color rgba(gris1, .5)
+	.navbar-collapse
+		border-color rgba(gris1, .5)
+	.navbar-nav>li>a
+	.navbar-nav>.active>a
+	.navbar-nav>.open>a:hover
+	.navbar-nav .open .dropdown-menu>li>a
+	.navbar-nav>li>a:hover
+		color blanco
+	.navbar-nav>.active>a
+	.navbar-nav>.open>a
+		background-color azul2
+	.navbar-nav>.open>a:hover
+		background-color azul2
+
+/*MAIN BANNER*/
+.main-banner-container
+	position relative
+.main-banner
+	display block
+	height 480px
+	.item
+		background transparent url(../../images/banner_principal_01_chiquito.jpg) no-repeat center top fixed
+		display block
+		height 100%
+		width 100%
+		&.uno
+			background-color gray
+.top-content
+	bottom -40px
+	position absolute
+	text-align center
+	width 100%
+	.logo
+		margin-bottom 30px
+	.slogan
+		color white
+		font-size 1.2em
+		font-weight 300
+		margin 0 auto 30px auto
+		width 260px
+	.arrow-container
+		display flex
+		justify-content center
+		margin-bottom 30px
+		.arrow
+			align-self center
+			background-color verde1
+			border-radius 50%
+			color blanco
+			display inline-block
+			font-size 1.8em
+			height 45px
+			text-align center
+			vertical-align middle
+			width 45px
+			&.icon-flecha
+				display flex
+				justify-content center
+				&:before
+					align-self center
+					margin-top 6px
+					transform rotate(-90deg)
+	.banner-line
+		background-color amarillo1
+		display inline-block
+		height 80px
+		width 4px

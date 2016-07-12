@@ -1,0 +1,112 @@
+body {
+  background: #fff;
+  font-family: 'Lato', sans-serif;
+  padding-top: 55px;
+}
+.navbar-default {
+  background-color: #006f9d;
+  border-color: #002e50;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-toggle {
+  border: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+  height: 4px;
+  width: 25px;
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: rgba(242,242,242,0.5);
+}
+.navbar-default .navbar-collapse {
+  border-color: rgba(242,242,242,0.5);
+}
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,
+.navbar-default .navbar-nav>li>a:hover {
+  color: #fff;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.open>a {
+  background-color: #002e50;
+}
+.navbar-default .navbar-nav>.open>a:hover {
+  background-color: #002e50;
+}
+/*MAIN BANNER*/
+.main-banner-container {
+  position: relative;
+}
+.main-banner {
+  display: block;
+  height: 480px;
+}
+.main-banner .item {
+  background: transparent url("../../images/banner_principal_01_chiquito.jpg") no-repeat center top fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.main-banner .item.uno {
+  background-color: #808080;
+}
+.top-content {
+  bottom: -40px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.top-content .logo {
+  margin-bottom: 30px;
+}
+.top-content .slogan {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 0 auto 30px auto;
+  width: 260px;
+}
+.top-content .arrow-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.top-content .arrow-container .arrow {
+  -ms-flex-item-align: center;
+  align-self: center;
+  background-color: #00a19c;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.8em;
+  height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  width: 45px;
+}
+.top-content .arrow-container .arrow.icon-flecha {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.top-content .arrow-container .arrow.icon-flecha:before {
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin-top: 6px;
+  transform: rotate(-90deg);
+}
+.top-content .banner-line {
+  background-color: #d4d700;
+  display: inline-block;
+  height: 80px;
+  width: 4px;
+}
+
+/*# sourceMappingURL=app.css.map */
