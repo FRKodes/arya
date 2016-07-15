@@ -110,6 +110,8 @@ body {
   z-index: 999;
   color: #fff;
   font-size: 3em;
+  border: none;
+  background: transparent;
 }
 .main-banner .slick-prev:focus,
 .main-banner .slick-next:focus {
