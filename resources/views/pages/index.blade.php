@@ -3,10 +3,13 @@
 @section('current_section_title', 'Lorem ipsum dolor sit amet. Tempora, commodi, ipsam!')
 
 @section('content')
-	<div class="main-banner-container">
-		
-		<div class="main-banner">
-			<div class="item uno"></div>
+	<div class="main-banner-container" id="home">
+		<div class="container">
+			<div class="main-banner">
+				<div class="item uno"></div>
+				<div class="item dos"></div>
+				<div class="item tres"></div>
+			</div>
 		</div>
 		
 		<div class="top-content">
@@ -27,7 +30,7 @@
 		</div>
 	</div>
 
-	<div class="container-fluid que-hacemos">
+	<div class="container-fluid que-hacemos" id="que-hacemos">
 		<div class="container">
 			<h2 class="text-center hidden-xs">¿Qué hacemos?</h2>
 			<div class="col-sm-6 image"><img src="/images/familia.jpg" class="hidden-sm hidden-md hidden-lg" alt="Foto familia feliz"></div>
@@ -42,13 +45,16 @@
 		</div>
 	</div>
 
-	<div class="container-fluid patrimonio">
+	<div class="container-fluid patrimonio" id="como-lo-hacemos">
 
 		<div class="container">
+
+			<h2 class="azul2 text-center hidden-xs">¿Cómo lo hacemos?</h2>
 			
 			<div class="col-sm-6 phrase">
 				<h2 class="text-center">En ARYA te ayudamos a formar tu patrimonio</h2>
 			</div>
+			<h2 class="azul2 text-center hidden-sm hidden-md hidden-lg">¿Cómo lo hacemos?</h2>
 			<div class="col-sm-6">
 				<div class="line">
 					<span class="number">1</span>
@@ -88,7 +94,7 @@
 
 	</div>
 
-	<div class="container-fluid post-venta">
+	<div class="container-fluid post-venta" id="post-venta">
 		<div class="container">
 			<h2 class="text-center hidden-xs">El mejor servicio post-venta</h2>
 			<div class="col-sm-6 image"><img src="/images/post_venta.jpg" class="hidden-sm hidden-md hidden-lg" alt="El mejor servicio Post-venta"></div>
@@ -100,14 +106,16 @@
 			</div>
 		</div>
 	</div>
+	
+	<div id="en-venta"></div>
 
 	<div class="en-venta">
 		<div class="container">
 			
 			<ul class="nav nav-tabs">
-			  <li class="active"><a data-toggle="tab" href="#terminados">Terminados</a></li>
-			  <li><a data-toggle="tab" href="#en-proceso">En proceso</a></li>
-			  <li><a data-toggle="tab" href="#preventa">Preventa</a></li>
+			  <li class="terminados active"><a data-toggle="tab" href="#terminados">Terminados</a></li>
+			  <li class="en-proceso"><a data-toggle="tab" href="#en-proceso">En proceso</a></li>
+			  <li class="preventa"><a data-toggle="tab" href="#preventa">Preventa</a></li>
 			</ul>
 		</div>
 		
@@ -149,16 +157,18 @@
 		</div>
 	</div>
 
-	<div class="container-fluid ventajas">
-		<div class="col-sm-6 image"></div>
-		<div class="col-sm-6 back-blue-md">
-			<h2 class="text-center amarillo1">Ventajas de trabajar con nosotros</h2>
-			<div class="line"><span class="icon-triangulo amarillo1"></span><p class="inline-block">Arquitectura contemporánea</p></div>
-			<div class="line"><span class="icon-triangulo amarillo1"></span><p class="inline-block">Altos estándares de construcción</p></div>
-			<div class="line"><span class="icon-triangulo amarillo1"></span><p class="inline-block">Amplia gama de prototipos para elegir</p></div>
-			<div class="line"><span class="icon-triangulo amarillo1"></span><p class="inline-block">Las mejores ubicaciones de la ciudad Fraccionamientos de gran plusvalía</p></div>
-			<div class="line"><span class="icon-triangulo amarillo1"></span><p class="inline-block">Apoyo para conseguir tu crédito fácilmente Elección de acabados a tu gusto Satisfacción garantizada</p></div>
-			<div class="line"><span class="icon-triangulo amarillo1"></span><p class="inline-block">Proyecto personalizado</p></div>
+	<div class="container-fluid ventajas" id="ventajas">
+		<div class="container">
+			<div class="col-sm-6 image"></div>
+			<div class="col-sm-6 back-blue-md">
+				<h2 class="text-center amarillo1">Ventajas de trabajar con nosotros</h2>
+				<div class="line"><span class="icon-triangulo amarillo1"></span><p class="inline-block">Arquitectura contemporánea</p></div>
+				<div class="line"><span class="icon-triangulo amarillo1"></span><p class="inline-block">Altos estándares de construcción</p></div>
+				<div class="line"><span class="icon-triangulo amarillo1"></span><p class="inline-block">Amplia gama de prototipos para elegir</p></div>
+				<div class="line"><span class="icon-triangulo amarillo1"></span><p class="inline-block">Las mejores ubicaciones de la ciudad Fraccionamientos de gran plusvalía</p></div>
+				<div class="line"><span class="icon-triangulo amarillo1"></span><p class="inline-block">Apoyo para conseguir tu crédito fácilmente Elección de acabados a tu gusto Satisfacción garantizada</p></div>
+				<div class="line"><span class="icon-triangulo amarillo1"></span><p class="inline-block">Proyecto personalizado</p></div>
+			</div>
 		</div>
 	</div>
 	
@@ -168,7 +178,7 @@
 		<div class="line-yellow"></div>
 	</div>
 
-	<div class="container aliados text-center">
+	<div class="container aliados text-center" id="socios-comerciales">
 		<h2 class="azul2">Aliados comerciales</h2>	
 		<div class="brand-logo aceros-ocotlan"></div>
 		<div class="brand-logo living-concept"></div>
@@ -181,34 +191,40 @@
 		<div class="brand-logo anti-corp"></div>
 	</div>
 
-	<div class="container-fluid contacto text-center">
-		<h2 class="azul2">Ponte en contacto</h2>
-		<p>
-			Av. Empresarios 135 Piso 7D <br> Col. Puerta de HIerro. Zapopan, Jal.
-		</p>
-		<ul class="social">
-			<li><a href="#" class="icon-facebook"></a></li>
-			<li><a href="#" class="icon-insta"></a></li>
-		</ul>
+	<div class="container-fluid contacto text-center" id="contacto">
+		<div class="container">
+			<h2 class="azul2">Ponte en contacto</h2>
+			<p>
+				Av. Empresarios 135 Piso 7D <br> Col. Puerta de HIerro. Zapopan, Jal.
+			</p>
+			<ul class="social">
+				<li><a href="#" class="icon-facebook"></a></li>
+				<li><a href="#" class="icon-insta"></a></li>
+			</ul>
 
-		<div class="map"></div>
+			<div class="map"></div>
 
-		<form action="#">
-			<p class="text-center blanco font14">Envíanos un mensaje</p>
-			<div class="form-group">
-				<input type="text" class="form-control">
-			</div>
-			<div class="form-group">
-				<input type="text" class="form-control">
-			</div>
-			<div class="form-group">
-				<textarea name="" id="" class="form-control" cols="30" rows="10"></textarea>
-			</div>
-			<div class="form-group">
-				<button class="btn btn-primary">Enviar</button>
-			</div>		
-		</form>
-		
+			{!! Form::open([]) !!}
+				<p class="text-center blanco font14">Envíanos un mensaje</p>
+				
+				<div class="form-group">
+					{!! Form::input('text', 'nombre', null, ['class'=>'form-control', 'placeholder'=>'Nombre']) !!}
+				</div>
+
+				<div class="form-group">
+					{!! Form::input('text', 'correo', null, ['class'=>'form-control', 'placeholder'=>'Correo']) !!}
+				</div>
+				
+				<div class="form-group">
+					{!! Form::textarea('mensaje', null, ['class'=>'form-control', 'placeholder'=>'Mensaje']) !!}
+				</div>
+
+				<div class="form-group">
+					{!! Form::submit('Enviar', ['class'=>'btn btn-primary']) !!}
+				</div>
+			{!! Form::close() !!}
+			
+		</div>
 		<div class="container"><span class="icon-logo blanco"></span></div>
 	</div>
 	
