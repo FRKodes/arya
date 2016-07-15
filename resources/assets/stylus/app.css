@@ -1,9 +1,25 @@
+.azul1 {
+  color: #006f9d;
+}
+.azul2 {
+  color: #002e50;
+}
+.amarillo1 {
+  color: #d4d700;
+}
+h2 {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
 body {
   background: #fff;
-  padding-top: 70px;
+  font-family: 'Lato', sans-serif;
+  padding-top: 55px;
 }
 .navbar-default {
   background-color: #006f9d;
+  border-color: #002e50;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 .navbar-default .navbar-toggle {
@@ -33,4 +49,223 @@ body {
 }
 .navbar-default .navbar-nav>.open>a:hover {
   background-color: #002e50;
+}
+/*MAIN BANNER*/
+.main-banner-container {
+  position: relative;
+}
+.main-banner {
+  display: block;
+  height: 480px;
+}
+.main-banner .item {
+  background: transparent url("../../images/banner_principal_01_chiquito.jpg") no-repeat center top fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.main-banner .item.uno {
+  background-color: #808080;
+}
+.top-content {
+  bottom: -40px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.top-content .logo {
+  margin-bottom: 30px;
+}
+.top-content .slogan {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 0 auto 30px auto;
+  width: 260px;
+}
+.top-content .call-to-action {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.top-content .call-to-action a {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 5px 10px;
+}
+.top-content .arrow-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.top-content .arrow-container .arrow {
+  align-self: center;
+  background-color: #00a19c;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.4em;
+  height: 35px;
+  text-align: center;
+  vertical-align: middle;
+  width: 35px;
+}
+.top-content .arrow-container .arrow.icon-flecha {
+  display: flex;
+  justify-content: center;
+}
+.top-content .arrow-container .arrow.icon-flecha:before {
+  align-self: center;
+  margin-top: 6px;
+  transform: rotate(-90deg);
+}
+.top-content .banner-line {
+  background-color: #d4d700;
+  display: inline-block;
+  height: 80px;
+  width: 4px;
+}
+.first-block {
+  margin-bottom: 20px;
+}
+.main-phrase {
+  font-size: 1.4em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.que-hacemos {
+  background: transparent url("../../images/fondo_verde.jpg") no-repeat center top;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.1em;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+.que-hacemos img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.patrimonio {
+  background: transparent url("../../images/livingroom.jpg") no-repeat center -50px;
+  background-size: 400px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.patrimonio .phrase {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+}
+.patrimonio .phrase h2 {
+  align-self: center;
+  display: flex;
+  font-size: 1.5em;
+  font-weight: 300;
+  justify-content: center;
+  line-height: 1.4em;
+  width: 210px;
+}
+.patrimonio .line {
+  width: 100%;
+}
+.patrimonio .line .block,
+.patrimonio .line .number {
+  display: inline-block;
+  width: 5%;
+}
+.patrimonio .line .block {
+  width: 93%;
+  padding: 5px 10px;
+  vertical-align: middle;
+  font-size: 1.1em;
+}
+.patrimonio .line .number {
+  color: #d4d700;
+  font-size: 1.2em;
+}
+.back-blue {
+  background-color: #002e50;
+}
+.back-gray {
+  background-color: #ccc;
+}
+.back-gray-light {
+  background-color: #f2f2f2;
+}
+.back-yellow {
+  background-color: #d4d700;
+}
+.post-venta {
+  background: transparent url("../../images/fondo_azul.jpg") no-repeat center top;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.1em;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+.post-venta img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.nav-tabs {
+  border: 0;
+}
+.nav-tabs li {
+  margin-bottom: 0;
+}
+.nav-tabs li a {
+  color: #000;
+}
+.nav-tabs li.active>a {
+  border-radius: 0;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  color: #000;
+}
+.nav-tabs li.active>a:focus,
+.nav-tabs li.active>a:hover {
+  border-color: #f2f2f2;
+  background-color: #f2f2f2;
+  color: #000;
+}
+.nav>li>a {
+  padding: 10px;
+}
+.ventajas {
+  background: #002e50 url("../../images/ventajas.jpg") no-repeat center top;
+  background-size: 480px;
+  color: #fff;
+  margin-top: 30px;
+  padding-bottom: 80px;
+}
+.ventajas h2 {
+  font-size: 1.4em;
+}
+.ventajas .image {
+  height: 450px;
+}
+.ventajas p {
+  font-size: 1.1em;
+  width: 90%;
+  vertical-align: top;
+}
+.ventajas span.icon-triangulo {
+  margin-right: 5px;
+  font-size: 0.8em;
+}
+.line-yellow {
+  background-color: #d4d700;
+  display: inline-block;
+  height: 80px;
+  width: 4px;
+  display: inline-block;
+}
+.line-yellow.go-up {
+  margin-top: -40px;
+  position: relative;
+}
+.inline-block {
+  display: inline-block;
 }

@@ -17,7 +17,7 @@
 		@include('partials.footer')
 	</footer>
 	
-	@include('partials.analytics')
+	{{-- @include('partials.analytics') --}}
 	
 	<script src="{{ elixir('js/all.min.js')}}"></script>
 	

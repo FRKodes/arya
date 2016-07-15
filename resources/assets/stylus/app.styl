@@ -2,9 +2,25 @@ azul1 = #006F9D
 azul2 = #002E50
 verde1 = #00A19C
 gris1 = #F2F2F2
+gris2 = #CCCCCC
 amarillo1 = #D4D700
 blanco = #FFFFFF
 
+.azul1
+	color azul1
+.azul2
+	color azul2
+.amarillo1
+	color amarillo1
+.blanco
+	color blanco
+h2
+	font-size 1.4em
+	margin-bottom 20px
+.font12
+	font-size 1.2em
+.font14
+	font-size 1.4em
 body
 	background blanco
 	font-family 'Lato', sans-serif
@@ -14,6 +30,8 @@ body
 	border-color azul2
 	margin-bottom 0
 	text-transform uppercase
+	.navbar-brand
+		padding 7px 15px
 	.navbar-toggle
 		border none
 		.icon-bar
@@ -62,6 +80,14 @@ body
 		font-weight 300
 		margin 0 auto 30px auto
 		width 260px
+	.call-to-action
+		text-align center
+		margin-bottom 30px
+		a
+			border 1px solid white
+			color blanco
+			font-size 1.2em
+			padding 5px 10px
 	.arrow-container
 		display flex
 		justify-content center
@@ -72,11 +98,11 @@ body
 			border-radius 50%
 			color blanco
 			display inline-block
-			font-size 1.8em
-			height 45px
+			font-size 1.4em
+			height 35px
 			text-align center
 			vertical-align middle
-			width 45px
+			width 35px
 			&.icon-flecha
 				display flex
 				justify-content center
@@ -89,3 +115,321 @@ body
 		display inline-block
 		height 80px
 		width 4px
+.first-block
+	margin-bottom 20px
+.main-phrase
+	font-size 1.4em
+	margin-top 40px
+	margin-bottom 20px
+.que-hacemos
+	background transparent url(../../images/fondo_verde.jpg) no-repeat center top
+	background-size cover
+	color blanco
+	font-size 1.1em
+	padding-top 30px
+	padding-bottom 70px
+	img
+		display block
+		height auto
+		width 100%
+.patrimonio
+	background transparent url(../../images/livingroom.jpg) no-repeat center -50px
+	background-size 400px
+	color blanco
+	margin-bottom 30px
+	.phrase
+		display flex
+		height 300px
+		justify-content center
+		h2
+			align-self center
+			display flex
+			font-size 1.5em
+			font-weight 300
+			justify-content center
+			line-height 1.4em
+			width 210px
+	.line
+		width 100%
+		.block
+		.number
+			display inline-block
+			width 5%
+		.block
+			width 93%
+			padding 5px 10px
+			vertical-align middle
+			font-size 1.1em
+		.number
+			color amarillo1
+			font-size 1.2em
+.back-blue
+	background-color azul2
+.back-gray
+	background-color gris2
+.back-gray-light
+	background-color gris1
+.back-yellow
+	background-color amarillo1
+.post-venta
+	background transparent url(../../images/fondo_azul.jpg) no-repeat center top 
+	background-size cover
+	color blanco
+	font-size 1.1em
+	padding-top 30px
+	padding-bottom 70px
+	img
+		display block
+		height auto
+		width 100%
+.en-venta
+	.back-gray-light
+		padding-bottom 20px
+	p
+		padding-top 20px
+	img
+		width 100%
+		height auto
+		display block
+.nav-tabs
+	border 0
+	li
+		margin-bottom 0
+		a
+			color black
+		&.active>a
+			border-radius 0
+			background-color gris1
+			border 1px solid gris1
+			color black
+			&:focus
+			&:hover
+				border-color gris1
+				background-color gris1
+				color black
+.nav>li>a
+	padding 10px
+.ventajas
+	background azul2 url(../../images/ventajas.jpg) no-repeat center top
+	background-size 480px
+	color blanco
+	margin-top 30px
+	padding-bottom 80px
+	h2
+		font-size 1.4em
+	.image
+		height 450px
+	p
+		font-size 1.1em
+		width 90%
+		vertical-align top
+	span.icon-triangulo
+		margin-right 5px
+		font-size .8em
+.line-yellow
+	background-color amarillo1
+	display inline-block
+	height 80px
+	width 4px
+	display inline-block
+	&.go-up
+		margin-top -40px
+		position relative
+.inline-block
+	display inline-block
+.aliados
+	margin-top 30px
+.brand-logo
+	background transparent url(../../images/sprite_logos.jpg) no-repeat left -27px
+	display inline-block
+	height 50px
+	margin-bottom 5px
+	vertical-align middle
+	width 245px
+	&.living-concept
+		background-position -322px -20px
+		width 123px
+	&.grupo-tunnich
+		background-position -461px -21px
+		height 65px
+		width 123px
+	&.grupo-guia
+		background-position -650px -14px
+		height 65px
+		width 140px
+	&.san-carlos
+		background-position -797px -35px
+		width 120px
+	&.i-cc
+		background-position -153px -147px
+		width 140px
+	&.tierra-armonia
+		background-position -294px -147px
+		height 65px
+		width 130px
+	&.arbol-verde
+		background-position -471px -141px
+		height 65px
+		width 120px
+	&.anti-corp
+		background-position -613px -143px
+		height 65px
+		width 110px
+.contacto
+	background transparent url(../../images/fondo_verde_contacto.jpg) no-repeat center bottom
+	background-size 2200px
+	margin-top 20px
+	padding-bottom 10px
+	.social
+		padding 0
+		margin 0
+		li
+			display inline-block
+			margin 0 3px
+			a
+				color gris2
+				font-size 2em
+	.map
+		background transparent url(../../images/mapa.jpg) no-repeat center center
+		background-size cover
+		height 300px
+		margin-top 20px
+	form
+		text-align center
+		margin-top 100px
+		margin-bottom 45px
+		.form-control
+			border-radius 0
+		textarea
+			resize none
+		button.btn.btn-primary
+			background azul1
+			border-radius 0
+			font-size 1.2em
+			padding 6px 20px
+.icon-logo.blanco
+	font-size 5em
+@media screen and (min-width: 400px)
+	.main-banner
+		.item
+			background-position center -70px
+			background-size 480px
+	.patrimonio
+		background transparent url(../../images/livingroom.jpg) no-repeat center -30px
+		background-size 480px
+		.phrase
+			height 390px
+@media screen and (min-width: 480px)
+	.main-banner
+		height 550px
+		.item
+			background-position center -100px
+			background-size 600px
+	.patrimonio
+		background transparent url(../../images/livingroom.jpg) no-repeat center -30px
+		background-size 600px
+		.phrase
+			height 480px
+	.ventajas
+		background-size 600px
+		.image
+			height 530px
+	.land-option
+		width 400px
+		margin 45px auto
+	.aliados
+		h2
+			margin-top 30px
+			margin-bottom 30px
+@media screen and (min-width: 600px)
+	.main-banner
+		.item
+			background url(../../images/banner_principal-01.jpg) no-repeat center center
+			background-size cover
+@media screen and (min-width: 768px)
+	.dropdown-menu
+		background azul2
+		li
+			padding-top 5px
+			padding-bottom 5px
+	body
+		padding-top 50px
+		font-size 1.5em
+	.navbar-default
+		border-color azul1
+		.navbar-nav
+			height 50px
+			display flex
+			float right
+			li
+				font-size .73em
+				align-self center
+	.main-banner
+		height 480px
+		.item
+			background-position center center
+	.top-content
+		.slogan
+			font-size 1.5em
+			width 260px
+	.main-phrase
+		margin-top 70px
+	.patrimonio
+		background none
+		margin-top 60px
+		margin-bottom 60px
+		.phrase
+			background transparent url(../../images/livingroom.jpg) no-repeat center center
+			background-size 500px
+			height 380px
+			h2
+				width 220px
+	.que-hacemos
+		padding-top 10px
+		h2
+			margin-bottom 25px
+		.image
+			background transparent url(../../images/familia.jpg) no-repeat center center
+			background-size cover
+			height 270px
+	.post-venta
+		padding-top 20px
+		padding-bottom 110px
+		margin-bottom 40px
+		h2
+			margin-bottom 35px
+		.image
+			background transparent url(../../images/post_venta.jpg) no-repeat center center
+			background-size cover
+			height 220px
+	.en-venta
+		.back-gray-light
+			padding-bottom 40px
+		p
+			padding-top 0px
+	.ventajas
+		background none
+		padding-bottom 0
+		.back-blue-md
+			background-color azul2
+			padding-bottom 15px
+		.image
+			background transparent url(../../images/ventajas.jpg) no-repeat center center
+			background-size cover
+			height 345px
+			float right
+	.aliados
+		h2
+			font-size 2em
+	.brand-logo
+		margin 10px 15px
+	.contacto
+		margin-top 40px
+		h2
+			font-size 2em
+		.social
+			li
+				a
+					font-size 3em
+	.icon-logo.blanco
+		font-size 6em
