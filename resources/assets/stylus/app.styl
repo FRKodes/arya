@@ -14,6 +14,8 @@ blanco = #FFFFFF
 	color amarillo1
 .blanco
 	color blanco
+.mayus
+	text-transform uppercase
 h2
 	font-size 1.4em
 	margin-bottom 20px
@@ -143,6 +145,7 @@ body
 				&:before
 					align-self center
 					margin-top 6px
+					margin-left 1px
 					transform rotate(-90deg)
 	.banner-line
 		background-color amarillo1
@@ -347,7 +350,11 @@ body
 	.main-banner
 		.item
 			background-position center -70px
-			background-size 480px
+			background-size 580px
+			min-height 546px
+			&.dos
+			&.tres
+				background-size 580px
 	.patrimonio
 		background transparent url(../../images/livingroom.jpg) no-repeat center -30px
 		background-size 480px
@@ -386,6 +393,10 @@ body
 			&.tres
 				background url(../../images/banner_principal-03.jpg) no-repeat center center
 				background-size cover
+	.ventajas
+		background-size 768px
+		.image
+			height 690px
 @media screen and (min-width: 768px)
 	.container
 		width 738px
@@ -413,6 +424,8 @@ body
 			li
 				font-size .7em
 				align-self center
+				a
+					padding 6px
 			.open
 				.dropdown-menu>li>a:hover
 					color azul2
@@ -424,10 +437,13 @@ body
 		height 480px
 		.item
 			background-position center center
+			min-height 480px
 	.top-content
 		.slogan
 			font-size 1.5em
 			width 260px
+		.arrow-container .arrow.icon-flecha:before
+			margin-left 2px
 	.first-block
 		margin-bottom 70px
 		p
@@ -441,8 +457,8 @@ body
 		margin-bottom 80px
 		.phrase
 			background transparent url(../../images/livingroom.jpg) no-repeat center center
-			background-size 500px
-			height 380px
+			background-size 575px
+			height 449px
 			h2
 				width 220px
 	.que-hacemos
@@ -479,7 +495,7 @@ body
 		.image
 			background transparent url(../../images/ventajas.jpg) no-repeat center center
 			background-size cover
-			height 345px
+			height 469px
 			float right
 	.aliados
 		h2
@@ -511,7 +527,7 @@ body
 	.patrimonio
 		margin-bottom 100px
 		.phrase
-			height 360px
+			height 404px
 	.post-venta
 		padding-bottom 130px
 		margin-bottom 80px
@@ -519,13 +535,19 @@ body
 		margin-bottom 100px
 	.ventajas
 		.image
-			height 322px
+			height 378px
 @media screen and (min-width: 1200px)
+	.navbar-default .navbar-nav li a
+		padding-left 12px
+		padding-right 12px
 	.container
 		width 1160px
 	.que-hacemos
 		p
 			padding-bottom 23px
+	.patrimonio
+		.phrase
+			height 358px
 	.post-venta
 		p
 			padding-bottom 30px

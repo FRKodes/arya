@@ -48,14 +48,27 @@ d.trigger("activate.bs.scrollspy")},b.prototype.clear=function(){a(this.selector
 
 	$(document).ready(function(){
 		$('.main-banner').slick(
-		{
-			'autoplay': true,
-			'fade': true,
-			'speed': 2500,
-			'autoplaySpeed': 5000
-		}
+			{
+				'autoplay': true,
+				'fade': true,
+				'speed': 2500,
+				'autoplaySpeed': 5000
+			}
 		);
+
+		var quienes = $("#que-hacemos").offset().top;
+		
+		// console.log('Position: ' + quienes);
+
 	});
+
+	setTimeout(function(){
+	    $('.top-content').addClass('magictime puffIn');
+	}, 100);
+
+	setInterval(function(){ 
+	    $('span.arrow.icon-flecha').toggleClass('magictime swashIn');
+	}, 1000 );
 }());
 
 //# sourceMappingURL=all.min.js.map

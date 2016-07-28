@@ -10,6 +10,9 @@
 .blanco {
   color: #fff;
 }
+.mayus {
+  text-transform: uppercase;
+}
 h2 {
   font-size: 1.4em;
   margin-bottom: 20px;
@@ -181,6 +184,7 @@ body {
   -ms-flex-item-align: center;
   align-self: center;
   margin-top: 6px;
+  margin-left: 1px;
   transform: rotate(-90deg);
 }
 .top-content .banner-line {
@@ -444,7 +448,12 @@ body {
 @media screen and (min-width: 400px) {
   .main-banner .item {
     background-position: center -70px;
-    background-size: 480px;
+    background-size: 580px;
+    min-height: 546px;
+  }
+  .main-banner .item.dos,
+  .main-banner .item.tres {
+    background-size: 580px;
   }
   .patrimonio {
     background: transparent url("../../images/livingroom.jpg") no-repeat center -30px;
@@ -497,6 +506,12 @@ body {
     background: url("../../images/banner_principal-03.jpg") no-repeat center center;
     background-size: cover;
   }
+  .ventajas {
+    background-size: 768px;
+  }
+  .ventajas .image {
+    height: 690px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -536,6 +551,9 @@ body {
     -ms-flex-item-align: center;
     align-self: center;
   }
+  .navbar-default .navbar-nav li a {
+    padding: 6px;
+  }
   .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
     color: #002e50;
   }
@@ -550,10 +568,14 @@ body {
   }
   .main-banner .item {
     background-position: center center;
+    min-height: 480px;
   }
   .top-content .slogan {
     font-size: 1.5em;
     width: 260px;
+  }
+  .top-content .arrow-container .arrow.icon-flecha:before {
+    margin-left: 2px;
   }
   .first-block {
     margin-bottom: 70px;
@@ -572,8 +594,8 @@ body {
   }
   .patrimonio .phrase {
     background: transparent url("../../images/livingroom.jpg") no-repeat center center;
-    background-size: 500px;
-    height: 380px;
+    background-size: 575px;
+    height: 449px;
   }
   .patrimonio .phrase h2 {
     width: 220px;
@@ -623,7 +645,7 @@ body {
   .ventajas .image {
     background: transparent url("../../images/ventajas.jpg") no-repeat center center;
     background-size: cover;
-    height: 345px;
+    height: 469px;
     float: right;
   }
   .aliados h2 {
@@ -663,7 +685,7 @@ body {
     margin-bottom: 100px;
   }
   .patrimonio .phrase {
-    height: 360px;
+    height: 404px;
   }
   .post-venta {
     padding-bottom: 130px;
@@ -673,15 +695,22 @@ body {
     margin-bottom: 100px;
   }
   .ventajas .image {
-    height: 322px;
+    height: 378px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .navbar-default .navbar-nav li a {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
   .container {
     width: 1160px;
   }
   .que-hacemos p {
     padding-bottom: 23px;
+  }
+  .patrimonio .phrase {
+    height: 358px;
   }
   .post-venta p {
     padding-bottom: 30px;
