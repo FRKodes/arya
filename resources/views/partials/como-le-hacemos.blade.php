@@ -5,7 +5,7 @@
 			<h2 class="text-center">En ARYA te ayudamos a formar tu patrimonio</h2>
 		</div>
 		<h2 class="azul2 text-center mayus hidden-sm hidden-md hidden-lg">¿Cómo le hacemos?</h2>
-		<div class="col-sm-6">
+		<div class="col-sm-6 features">
 			<div class="line">
 				<span class="number">1</span>
 				<p class="block back-blue">¿Cuál es tu presupuesto?</p>

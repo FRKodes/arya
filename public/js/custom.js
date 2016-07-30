@@ -27,8 +27,47 @@
 		);
 
 		var quienes = $("#que-hacemos").offset().top;
+		var como_hacemos = $("#como-lo-hacemos").offset().top;
+		var en_venta = $("#en-venta").offset().top;
+		var post_venta = $("#post-venta").offset().top;
+		var ventajas = $("#ventajas").offset().top;
+		var socios = $("#socios-comerciales").offset().top;
+		var contacto = $("#contacto").offset().top;
 		
-		// console.log('Position: ' + quienes);
+		// console.log('Position quienes: ' + quienes + '\n');
+		console.log('Position como lo hacemos: ' + como_hacemos + '\n');
+		// console.log('Position en venta: ' + en_venta + '\n');
+		// console.log('Position post venta: ' + post_venta + '\n');
+		// console.log('Position ventajas: ' + ventajas + '\n');
+		// console.log('Position socios: ' + socios + '\n');
+		// console.log('Position contacto: ' + contacto + '\n');
+
+		var ele = document.body;
+		var current_height = 0;
+		$( window ).scroll(function() {
+			
+			// console.log(ele.scrollTop);
+			current_height = ele.scrollTop;
+			console.log(current_height);
+
+			if (ele.scrollTop >= como_hacemos-900) { 
+				$('.col-sm-6.phrase').addClass('magictime').addClass('slideLeftRetourn');
+				$('.col-sm-6.features').addClass('magictime').addClass('slideRightRetourn');
+			};
+
+			if (ele.scrollTop >= en_venta-900) { 
+				$('.en-venta .col-md-7 img').addClass('magictime').addClass('puffIn');
+			};
+
+			if (ele.scrollTop >= ventajas-900) { 
+				$('#ventajas .image').addClass('magictime').addClass('slideRightRetourn');
+				$('#ventajas .back-blue-md').addClass('magictime').addClass('puffIn');
+
+			};
+
+
+		});
+
 
 	});
 
