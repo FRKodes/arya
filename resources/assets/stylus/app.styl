@@ -328,16 +328,18 @@ body
 				color gris2
 				font-size 2em
 	.map
-		background transparent url(../../images/mapa.jpg) no-repeat center center
-		background-size cover
+		background gray
 		height 300px
 		margin-top 20px
 	form
 		text-align center
 		margin-top 100px
 		margin-bottom 45px
+		position relative
 		.form-control
 			border-radius 0
+		.error .form-control
+			border-color rgba(red,.8)
 		textarea
 			resize none
 		.btn.btn-primary
@@ -345,6 +347,16 @@ body
 			border-radius 0
 			font-size 1.2em
 			padding 6px 20px
+		.sent_mail_alert
+			background rgba(verde1,.95)
+			color white
+			text-align center
+			position absolute
+			top 89px
+			display none
+			width 100%
+			padding 50px 30px
+			font-size 1.4em
 .icon-logo.blanco
 	font-size 5em
 @media screen and (min-width: 400px)
@@ -507,6 +519,8 @@ body
 		margin-top 40px
 		h2
 			font-size 2em
+		.map
+			height 400px
 		.social
 			li
 				a
@@ -537,6 +551,9 @@ body
 	.ventajas
 		.image
 			height 378px
+	.contacto
+		.map
+			height 500px
 @media screen and (min-width: 1200px)
 	.navbar-default .navbar-nav li a
 		padding-left 12px

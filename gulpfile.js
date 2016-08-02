@@ -13,6 +13,7 @@ elixir(function(mix) {
 		'public/js/jquery.js',
 		'public/js/bootstrap.min.js',
 		'public/js/slick.js',
+		'public/js/validator.js',
 		'public/js/custom.js'
 	],'public/js/all.min.js', 'public/js')
 	.version(['public/css/all.min.css', 'public/js/all.min.js']);

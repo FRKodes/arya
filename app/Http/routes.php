@@ -1,5 +1,8 @@
 <?php
-
+use \Mail;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -13,6 +16,11 @@
 
 // Route::get('/', 'WelcomeController@index');
 Route::get('/', 'PagesController@index');
+Route::post('sendmail', function (){
+	Mail::send('emails.contact', [], function($message){
+		$message->to('frkalderon@gmail.com')->subject('Correo de Contacto ARYA');
+	});	
+});
 
 Route::get('home', 'HomeController@index');
 

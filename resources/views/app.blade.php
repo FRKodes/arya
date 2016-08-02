@@ -20,6 +20,6 @@
 	{{-- @include('partials.analytics') --}}
 	
 	<script src="{{ elixir('js/all.min.js')}}"></script>
-	
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9sZlZagIkv5aCb5da0Cbkj9iV49abzEM&amp;callback=initMap"></script>
 </body>
 </html>
