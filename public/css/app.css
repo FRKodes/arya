@@ -290,9 +290,57 @@ body {
   padding-top: 20px;
 }
 .en-venta img {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+.en-venta .finished-carousel .item {
   width: 100%;
   height: auto;
-  display: block;
+  float: left;
+  position: relative;
+}
+.en-venta .finished-carousel .slick-prev,
+.en-venta .finished-carousel .slick-next {
+  border: none;
+  font-size: 2em;
+  background: transparent;
+}
+.en-venta .finished-carousel .slick-next {
+  top: 45%;
+  right: 0;
+  transform: rotate(180deg);
+  position: absolute;
+  display: none !important;
+}
+.en-venta .finished-carousel .slick-prev {
+  top: 45%;
+  left: 0;
+  color: transparent;
+}
+.en-venta .finished-carousel .slick-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+.en-venta .finished-carousel .slick-dots li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.en-venta .finished-carousel .slick-dots li button {
+  transition: background 1s ease;
+  background: #ccc;
+  height: 20px;
+  width: 20px;
+  color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+.en-venta .finished-carousel .slick-dots li button:focus {
+  outline: none;
+}
+.en-venta .finished-carousel .slick-dots li.slick-active button {
+  background: #002e50;
+  transition: background 1s ease;
 }
 .nav-tabs {
   border: 0;

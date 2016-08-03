@@ -18,7 +18,7 @@ function initMap() {
 	      '</div>'+
 	      '<h3 id="firstHeading" class="firstHeading">ARYA</h3>'+
 	      '<div id="bodyContent">'+
-	      '<p>rock caves and ancient paintings. Uluru is listed as a World </p>'+
+	      '<p>Te llevamos de la mano a contstruir tus sueños.</p>'+
 	      '</div>'+
 	      '</div>';
 
@@ -65,7 +65,8 @@ $(function(){
 });
 
 (function(){
-	$(".navbar-nav li a").on('click',function() {
+	$(".navbar-nav li a, .link-to-contact").on('click',function() {
+		
 		var element = $(this).attr('data-href').slice(1);
 	    $('html, body').animate({
 	        scrollTop: $("#" + element).offset().top-40
@@ -92,6 +93,18 @@ $(function(){
 			}
 		);
 
+
+		$('.finished-carousel').slick(
+			{
+				'autoplay': true,
+				'fade': true,
+				'dots': true,
+				'adaptiveHeight': true,
+				'speed': 500,
+				'autoplaySpeed': 5000
+			}
+		);
+
 		var quienes = $("#que-hacemos").offset().top;
 		var como_hacemos = $("#como-lo-hacemos").offset().top;
 		var en_venta = $("#en-venta").offset().top;
@@ -112,7 +125,7 @@ $(function(){
 			};
 
 			if (ele.scrollTop >= en_venta-900) { 
-				$('.en-venta .col-md-7 img').addClass('magictime').addClass('puffIn');
+				$('.en-venta').addClass('magictime').addClass('puffIn');
 			};
 
 			if (ele.scrollTop >= ventajas-900) { 
