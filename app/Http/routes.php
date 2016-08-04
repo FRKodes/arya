@@ -18,7 +18,7 @@ use Illuminate\Http\Request;
 Route::get('/', 'PagesController@index');
 Route::post('sendmail', function (){
 	Mail::send('emails.contact', [], function($message){
-		$message->to('frkalderon@gmail.com')->subject('Correo de Contacto ARYA');
+		$message->to('info@arya.com.mx')->subject('Correo de Contacto ARYA');
 	});	
 });
 

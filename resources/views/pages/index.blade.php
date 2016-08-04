@@ -45,7 +45,6 @@
 		<div class="brand-logo san-carlos"></div>
 		<div class="brand-logo i-cc"></div>
 		<div class="brand-logo tierra-armonia"></div>
-		<div class="brand-logo arbol-verde"></div>
 		<div class="brand-logo anti-corp"></div>
 	</div>
 
@@ -53,11 +52,11 @@
 		<div class="container">
 			<h2 class="azul2 mayus">Ponte en contacto</h2>
 			<p>
-				Av. Empresarios 135 Piso 7D <br> Col. Puerta de HIerro. Zapopan, Jal.
+				Montreal 1694 <br> Col. Italia Providencia. <br> Guadalajara, Jal.
 			</p>
 			<ul class="social">
-				<li><a href="#" class="icon-facebook"></a></li>
-				<li><a href="#" class="icon-insta"></a></li>
+				<li><a href="https://www.facebook.com/aryadesarrollos" target="_blank" class="icon-facebook"></a></li>
+				<li><a href="#" target="_blank" class="icon-insta"></a></li>
 			</ul>
 
 			<div class="map" id="map"></div>

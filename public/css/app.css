@@ -333,7 +333,7 @@ body {
   width: 20px;
   color: transparent;
   border: none;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 .en-venta .finished-carousel .slick-dots li button:focus {
   outline: none;

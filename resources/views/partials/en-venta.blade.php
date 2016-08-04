@@ -5,7 +5,7 @@
 		
 		<ul class="nav nav-tabs">
 		  <li class="terminados active"><a data-toggle="tab" href="#terminados">Terminados</a></li>
-		  <li class="en-proceso"><a data-toggle="tab" href="#en-proceso">En proceso</a></li>
+		  {{-- <li class="en-proceso"><a data-toggle="tab" href="#en-proceso">En proceso</a></li> --}}
 		  <li class="preventa"><a data-toggle="tab" href="#preventa">Preventa</a></li>
 		</ul>
 	</div>
@@ -24,14 +24,16 @@
 						</div>
 						
 					</div>
-					<div id="en-proceso" class="tab-pane fade">
+					
+					{{-- <div id="en-proceso" class="tab-pane fade">
 						<div class="col-sm-12"><h3>En proceso</h3></div>
 
 						<div class="process-carousel">
 							@include('partials.en-venta-proceso')
 						</div>
 
-					</div>
+					</div> --}}
+					
 					<div id="preventa" class="tab-pane fade">
 						<div class="col-sm-12"><h3>Preventa</h3></div>
 						<div class="col-sm-6 col-md-7">

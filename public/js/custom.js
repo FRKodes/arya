@@ -1,16 +1,16 @@
 function initMap() {
-	var myLatLng = {lat: 20.693819, lng: -103.378192};
+	var myLatLng = {lat: 20.703602, lng: -103.380431};
 	var map = new google.maps.Map(document.getElementById('map'), {
-	zoom: 14,
-	scrollwheel: false,
-	center: myLatLng
+		zoom: 14,
+		scrollwheel: false,
+		center: myLatLng
 	});
 
 	var marker = new google.maps.Marker({
 		position: myLatLng,
 		map: map,
 		animation: google.maps.Animation.DROP,
-		title: 'ARYA <br /> Ok'
+		title: 'ARYA'
 	});
 
 	var contentString = '<div id="content">'+
@@ -19,6 +19,8 @@ function initMap() {
 	      '<h3 id="firstHeading" class="firstHeading">ARYA</h3>'+
 	      '<div id="bodyContent">'+
 	      '<p>Te llevamos de la mano a contstruir tus sueños.</p>'+
+	      '<p>Correo: <a href="mailto:info@arya.com.mx">info@arya.com.mx</a></p>'+
+	      '<p>Teléfono: (33) 3817 6602</p>'+
 	      '</div>'+
 	      '</div>';
 

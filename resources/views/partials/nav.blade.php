@@ -18,7 +18,6 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">En venta <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a data-href="#en-venta" data-open="terminados">Terminados</a></li>
-						<li><a data-href="#en-venta" data-open="en-proceso">En proceso</a></li>
 						<li><a data-href="#en-venta" data-open="preventa">Preventa</a></li>
 					</ul>
 				</li>
