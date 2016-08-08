@@ -5,6 +5,7 @@
 	@include('partials.styles')
 </head>
 <body class="@yield('body_page')">
+	@include('partials.analytics')
 	<header>
 		@include('partials.nav')
 	</header>
@@ -17,9 +18,8 @@
 		@include('partials.footer')
 	</footer>
 	
-	{{-- @include('partials.analytics') --}}
 	
 	<script src="{{ elixir('js/all.min.js')}}"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9sZlZagIkv5aCb5da0Cbkj9iV49abzEM&amp;callback=initMap"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEQaIE_qgDDf7Tuu7reM1-6b5HVUJg02s&amp;callback=initMap"></script>
 </body>
 </html>
