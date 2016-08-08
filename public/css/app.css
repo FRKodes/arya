@@ -210,10 +210,24 @@ body {
   padding-top: 30px;
   padding-bottom: 70px;
 }
-.que-hacemos img {
+.que-hacemos .col-sm-6.image {
+  background: transparent url("../../images/familia.jpg") no-repeat center center;
+  background-size: cover;
+}
+.que-hacemos .col-sm-6.image img {
   display: block;
   height: auto;
   width: 100%;
+  opacity: 0;
+}
+.que-hacemos .col-sm-6.text {
+  background: rgba(55,62,0,0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.que-hacemos .col-sm-6.text h2 {
+  margin-top: 0;
 }
 .patrimonio {
   background: transparent url("../../images/livingroom.jpg") no-repeat center -50px;
@@ -278,10 +292,24 @@ body {
   padding-top: 30px;
   padding-bottom: 70px;
 }
-.post-venta img {
+.post-venta .col-sm-6.image {
+  background: transparent url("../../images/post_venta.jpg") no-repeat center center;
+  background-size: cover;
+}
+.post-venta .col-sm-6.image img {
   display: block;
   height: auto;
+  opacity: 0;
   width: 100%;
+}
+.post-venta .col-sm-6.text {
+  background: rgba(0,15,26,0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.post-venta .col-sm-6.text h2 {
+  margin-top: 0;
 }
 .en-venta .back-gray-light {
   padding-bottom: 20px;
@@ -673,7 +701,10 @@ body {
   .que-hacemos .image {
     background: transparent url("../../images/familia.jpg") no-repeat center center;
     background-size: cover;
-    height: 270px;
+    height: 323px;
+  }
+  .que-hacemos .col-sm-6.text {
+    text-align: left;
   }
   .post-venta {
     padding-top: 20px;
@@ -686,7 +717,13 @@ body {
   .post-venta .image {
     background: transparent url("../../images/post_venta.jpg") no-repeat center center;
     background-size: cover;
-    height: 220px;
+    height: 248px;
+  }
+  .post-venta .col-sm-6.text {
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 28px;
   }
   .en-venta {
     margin-bottom: 80px;
@@ -747,6 +784,14 @@ body {
   .que-hacemos {
     padding-bottom: 125px;
   }
+  .que-hacemos .image {
+    height: 362px;
+  }
+  .que-hacemos .col-sm-6.text {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 28px;
+  }
   .patrimonio {
     margin-bottom: 100px;
   }
@@ -756,6 +801,14 @@ body {
   .post-venta {
     padding-bottom: 130px;
     margin-bottom: 80px;
+  }
+  .post-venta .col-sm-6.text {
+    line-height: 32px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .post-venta .image {
+    height: 310px;
   }
   .en-venta {
     margin-bottom: 100px;
@@ -775,11 +828,17 @@ body {
   .container {
     width: 1160px;
   }
+  .que-hacemos .image {
+    height: 375px;
+  }
   .que-hacemos p {
     padding-bottom: 23px;
   }
   .patrimonio .phrase {
     height: 358px;
+  }
+  .post-venta .image {
+    height: 338px;
   }
   .post-venta p {
     padding-bottom: 30px;
@@ -789,7 +848,7 @@ body {
     margin-bottom: 20px;
   }
   .en-venta .back-gray-light {
-    padding-bottom: 70px;
+    padding-bottom: 0px;
   }
 }
 
