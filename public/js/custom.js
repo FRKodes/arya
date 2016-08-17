@@ -96,16 +96,41 @@ $(function(){
 		);
 
 
-		$('.finished-carousel').slick(
+		// $('.finished-carousel').slick(
+		// 	{
+		// 		'autoplay': true,
+		// 		'fade': true,
+		// 		'dots': true,
+		// 		'adaptiveHeight': true,
+		// 		'prevArrow': '<button type="button" class="slick-prev"></button>',
+		// 		'nextArrow': '<button type="button" class="slick-next"></button>',
+		// 		'speed': 500,
+		// 		'autoplaySpeed': 5000
+		// 	}
+		// );
+
+		$('.preventa-carousel').slick(
 			{
-				'autoplay': true,
 				'fade': true,
 				'dots': true,
-				'adaptiveHeight': true,
-				'speed': 500,
-				'autoplaySpeed': 5000
+				'prevArrow': '<button type="button" class="slick-prev"></button>',
+				'nextArrow': '<button type="button" class="slick-next"></button>',
+				'speed': 1000
 			}
 		);
+
+		$('.images-carousel').slick(
+			{
+				'autoplay': true,
+				'autoplaySpeed': 3000,
+				'arrows': false,
+				'fade': true,
+				'dots': true,
+				'speed': 600
+			}
+		);
+
+
 
 		var quienes = $("#que-hacemos").offset().top;
 		var como_hacemos = $("#como-lo-hacemos").offset().top;

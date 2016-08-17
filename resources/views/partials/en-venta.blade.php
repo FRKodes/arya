@@ -36,11 +36,8 @@
 					
 					<div id="preventa" class="tab-pane fade">
 						<div class="col-sm-12"><h3>Preventa</h3></div>
-						<div class="col-sm-6 col-md-7">
-							<img src="/images/banner_principal-01.jpg" alt="preventa">
-						</div>
-						<div class="col-sm-6 col-md-5">	
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto velit provident ipsum culpa fugiat eaque harum eius unde facere, assumenda, repellat nesciunt voluptatibus numquam cupiditate quibusdam, pariatur incidunt at ea!</p>
+						<div class="preventa-carousel">
+							@include('partials.en-venta-preventa')
 						</div>
 					</div>
 				</div>

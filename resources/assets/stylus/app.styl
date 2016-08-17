@@ -245,13 +245,23 @@ body
 .en-venta
 	.back-gray-light
 		padding-bottom 20px
+		min-height 500px
 	p
 		padding-top 20px
 	img
 		width 100% !important
 		height auto !important
 		display block
+	.tab-pane.fade
+		height 0px
+		display block
+		opacity 0
+		overflow hidden
+		&.in
+			height auto
+			opacity 1
 	.finished-carousel
+	.preventa-carousel
 		.item
 			width 100%
 			height auto
@@ -292,6 +302,28 @@ body
 					button
 						background azul2
 						transition background 1s ease
+	.images-carousel
+		.slick-prev
+		.slick-next
+			border none
+			font-size 2em
+			background transparent
+			&:focus
+				outline none
+		.slick-next
+			top 45%
+			right 0
+			transform rotate(180deg)
+			position relative
+			z-index 999
+			&:before
+				content "\68"
+		.slick-prev
+			top 45%
+			left 0
+			color white
+			position absolute
+			z-index 999
 .nav-tabs
 	border 0
 	li
@@ -390,6 +422,11 @@ body
 			a
 				color gris2
 				font-size 2em
+				transition .5s ease
+				&:hover
+					color gris1
+					text-decoration none
+					transition .5s ease
 	.map
 		background gray
 		height 300px
@@ -566,7 +603,7 @@ body
 	.en-venta
 		margin-bottom 80px
 		.back-gray-light
-			padding-bottom 40px
+			padding-bottom 0px
 		p
 			padding-top 0px
 	.ventajas
