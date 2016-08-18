@@ -19,12 +19,12 @@ Route::get('/', 'PagesController@index');
 Route::post('sendmail', function (){
 	Mail::send('emails.contact', [], function($message){
 		$message->to('info@arya.com.mx')->subject('Correo de Contacto ARYA');
-	});	
+	});
 });
 
-Route::get('home', 'HomeController@index');
+// Route::get('home', 'HomeController@index');
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+// Route::controllers([
+// 	'auth' => 'Auth\AuthController',
+// 	'password' => 'Auth\PasswordController',
+// ]);

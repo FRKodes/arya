@@ -1,7 +1,5 @@
 @extends('app')
 
-@section('current_section_title', 'Lorem ipsum dolor sit amet. Tempora, commodi, ipsam!')
-
 @section('content')
 	
 	@include('partials.banners')
@@ -39,12 +37,8 @@
 	<div class="container aliados text-center" id="socios-comerciales">
 		<h2 class="azul2 mayus">Aliados comerciales</h2>	
 		<div class="brand-logo aceros-ocotlan"></div>
-		<div class="brand-logo living-concept"></div>
 		<div class="brand-logo grupo-tunnich"></div>
-		<div class="brand-logo grupo-guia"></div>
-		<div class="brand-logo san-carlos"></div>
 		<div class="brand-logo i-cc"></div>
-		<div class="brand-logo tierra-armonia"></div>
 		<div class="brand-logo anti-corp"></div>
 	</div>
 
